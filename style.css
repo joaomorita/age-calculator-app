@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: hsl(0, 0%, 94%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main{
+    background-color: hsl(0, 0%, 100%);
+    width: 700px;
+    height: 500px;
+    padding: 3em;
+    border-radius: 15px 15px 150px 15px;
+}
+
+
+form{
+    padding-top: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    font-size: 0.9em;
+    font-weight: 600;
+    color: hsl(0, 1%, 44%);
+    text-transform: uppercase;
+}
+
+form input{
+    width: 6em;
+    padding: 1em;
+    border-radius: 5px;
+    border: 1px solid hsl(0, 0%, 86%);
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+form input:focus{
+    outline-color: hsl(259, 100%, 65%);
+}
+
+.error-message-day,
+.error-message-month,
+.error-message-year{
+    font-size: 0.6em;
+    color: red;
+    padding: 0.5em;
+    display: none;
+}
+
+
+.line{
+    display: flex;
+    align-items: center;
+    
+}
+
+.line hr{
+    width: 80%;
+    height: 0;
+}
+
+.line img{
+    background-color: hsl(259, 100%, 65%);
+    border-radius: 50%;
+    height: 80px;
+}
+
+
+.res p{
+    font-size: 5em;
+    font-weight: bolder;
+}
+
+.res span{
+    color: hsl(259, 100%, 65%);
+}
+
+.attribution{
+    padding: 1rem;
+}
+
+.attribution a{
+    text-decoration: none;
+    color: hsl(259, 100%, 65%);
+}
+
+.attribution a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    main{
+        width: 70vw;
+    }
+
+    form{
+        width: 100%;
+    }
+
+    form input{
+        width: 3em;
+        border-radius: 5px;
+        border: 1px solid hsl(0, 0%, 86%);
+        margin-right: 5px;
+        margin-bottom: 1rem;
+    }
+
+    .res p{
+        font-size: 3.5em;
+        font-weight: bolder;
+    }
+
+    .line img{
+        position: relative;
+        margin-left: 35%;
+    }
+
+    .line hr{
+        position: absolute;
+        width: 70%;
+    }
+
+}
