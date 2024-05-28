@@ -121,8 +121,12 @@ form input:focus{
         margin-bottom: 1rem;
     }
 
+    .res{
+        margin-top: 3em;
+    }
+
     .res p{
-        font-size: 3.5em;
+        font-size: 3em;
         font-weight: bolder;
     }
 
